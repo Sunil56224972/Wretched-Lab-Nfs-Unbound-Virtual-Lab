@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width" data-next-head=""/><title data-next-head="">Wretched lab | NFS Unbound</title><meta name="og:title" content="Wretched lab | NFS Unbound" data-next-head=""/><meta name="og:url" content="/virtual-car-showroom" data-next-head=""/><meta name="description" content="Discover a new standard in virtual automotive experiences. Explore four iconic cars—the Lamborghini Gallardo LP560, McLaren Senna, Nissan Skyline GT-R R35 and Ferrari F40—in stunning detail, powered by Three.js and WebGL for realistic, real-time rendering." data-next-head=""/><meta name="og:description" content="Discover a new standard in virtual automotive experiences. Explore four iconic cars—the Lamborghini Gallardo LP560, McLaren Senna, Nissan Skyline GT-R R35 and Ferrari F40—in stunning detail, powered by Three.js and WebGL for realistic, real-time rendering." data-next-head=""/><meta property="og:image" content="/virtual-car-showroom/assets/images/wretched-lab-nfs-unbound.jpg" data-next-head=""/><meta property="og:image:alt" content="Wretched Lab" data-next-head=""/><meta property="og:image:width" content="1200" data-next-head=""/><meta property="og:image:height" content="630" data-next-head=""/><meta property="twitter:image" content="/virtual-car-showroom/assets/images/wretched-lab-nfs-unbound.jpg" data-next-head=""/><meta property="twitter:image:alt" content="Wretched Lab" data-next-head=""/><meta property="twitter:image:width" content="1200" data-next-head=""/><meta property="twitter:image:height" content="630" data-next-head=""/><meta name="twitter:card" content="summary_large_image" data-next-head=""/><link rel="apple-touch-icon" sizes="180x180" href="/virtual-car-showroom/apple-touch-icon.png" data-next-head=""/><link rel="icon" type="image/png" sizes="32x32" href="/virtual-car-showroom/favicon-32x32.png" data-next-head=""/><link rel="icon" type="image/png" sizes="16x16" href="/virtual-car-showroom/favicon-16x16.png" data-next-head=""/><link rel="preload" href="/virtual-car-showroom/_next/static/media/f6b0aeaf3ea04f3b-s.p.ttf" as="font" type="font/ttf" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/virtual-car-showroom/_next/static/media/ff9ccf87d4ee1f04-s.p.ttf" as="font" type="font/ttf" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/virtual-car-showroom/_next/static/media/cf26891c57ee1b57-s.p.ttf" as="font" type="font/ttf" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/virtual-car-showroom/_next/static/css/51072b48c85d6b5a.css" as="style"/><link rel="stylesheet" href="/virtual-car-showroom/_next/static/css/51072b48c85d6b5a.css" data-n-g=""/><link rel="preload" href="/virtual-car-showroom/_next/static/css/9a1c248ff07f643e.css" as="style"/><link rel="stylesheet" href="/virtual-car-showroom/_next/static/css/9a1c248ff07f643e.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/virtual-car-showroom/_next/static/chunks/polyfills-42372ed130431b0a.js"></script><script src="/virtual-car-showroom/_next/static/chunks/webpack-3f9d813d0d4b029c.js" defer=""></script><script src="/virtual-car-showroom/_next/static/chunks/framework-a6e0b7e30f98059a.js" defer=""></script><script src="/virtual-car-showroom/_next/static/chunks/main-d79ab3a1be79b67b.js" defer=""></script><script src="/virtual-car-showroom/_next/static/chunks/pages/_app-4ec3765c18d9ba98.js" defer=""></script><script src="/virtual-car-showroom/_next/static/chunks/69b51223-65b5c5af48f0f5b8.js" defer=""></script><script src="/virtual-car-showroom/_next/static/chunks/pages/index-3f9579031cc1bf52.js" defer=""></script><script src="/virtual-car-showroom/_next/static/u1v7FerhsrLwWkAiHt-7L/_buildManifest.js" defer=""></script><script src="/virtual-car-showroom/_next/static/u1v7FerhsrLwWkAiHt-7L/_ssgManifest.js" defer=""></script>
+<style>
+  .header__logo { visibility: hidden !important; }
+  #wl-logo {
+    position: absolute;
+    margin: 20px 0 0 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    visibility: visible;
+  }
+  #wl-logo-text {
+    color: #F5F5F5;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    font-family: var(--font-tobias), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  #wl-logo-badge {
+    color: #F5F5F5;
+    font-size: 11px;
+    font-weight: 400;
+    border: 1.4px solid #F5F5F5;
+    border-radius: 3px;
+    padding: 4px 8px;
+    line-height: 1;
+    font-family: var(--font-tobias), 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+</style>
+<script>
+  (function() {
+    // Insert the Wretched Lab logo once React has mounted
+    function insertLogo() {
+      // Check if already inserted
+      if (document.getElementById('wl-logo')) return;
+      // Find the container where the SVG logo will be mounted
+      var main = document.querySelector('main');
+      if (!main) return;
+      var logo = document.createElement('div');
+      logo.id = 'wl-logo';
+      logo.innerHTML = '<span id="wl-logo-text">Wretched</span><span id="wl-logo-badge">Lab</span>';
+      // Insert before the main content so it's in the same stacking context
+      main.parentNode.insertBefore(logo, main);
+    }
+
+    // Wait for DOM to be ready, then poll until main is available
+    var observer = new MutationObserver(function() {
+      if (document.querySelector('main')) {
+        insertLogo();
+      }
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+      observer.observe(document.body, { childList: true, subtree: true });
+      // Also try immediately in case it's already there
+      insertLogo();
+    });
+  })();
+</script></head><body><div id="__next"><main class="__variable_56e178"></main><!--$--><!--/$--></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"u1v7FerhsrLwWkAiHt-7L","assetPrefix":"/virtual-car-showroom","runtimeConfig":{"assetPrefix":"/virtual-car-showroom"},"nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script>
+</body></html>

@@ -1,0 +1,43 @@
+# Vercel deployment artifacts (not part of project)
+public/_vercel/
+public/cdn-cgi/
+
+# Dependency directories
+node_modules/
+.npm
+
+# Build output (keep the static export)
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Temp / scratch files
+*.tmp
+*.bak
+
+# Package lock (optional)
+package-lock.json
+yarn.lock
