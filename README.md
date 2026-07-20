@@ -118,6 +118,33 @@ This is a **Next.js static export** — all assets are pre-compiled. No server-s
 
 ---
 
+## 🙏 Credits
+
+### 3D Car Models
+The car models used in this project are sourced from the open-access **NFS Unbound** community and public repositories. They are used here purely for creative and educational showcasing purposes.
+
+| Model | Source |
+|---|---|
+| McLaren Senna | [Sketchfab — NFS Unbound Fan Models](https://sketchfab.com) |
+| Lamborghini Gallardo LP560 | [Free3D.com — Community Upload](https://free3d.com) |
+| Nissan Skyline GT-R R35 | [Sketchfab — NFS Unbound Fan Models](https://sketchfab.com) |
+| Ferrari F40 | [Free3D.com — Community Upload](https://free3d.com) |
+
+### Libraries & Tools
+
+| Tool | Credit |
+|---|---|
+| [Three.js](https://threejs.org) | 3D WebGL rendering engine by Mr.doob & contributors |
+| [Basis Universal](https://github.com/BinomialLLC/basis_universal) | KTX2 texture transcoder by Binomial LLC |
+| [Draco](https://google.github.io/draco/) | 3D mesh compression by Google |
+| [Next.js](https://nextjs.org) | React framework by Vercel |
+| [Tailwind CSS](https://tailwindcss.com) | Utility-first CSS framework |
+
+> All third-party assets are used under their respective licenses.
+> No commercial use is implied or intended.
+
+---
+
 ## 📄 License
 
 MIT © Sunil56224972
