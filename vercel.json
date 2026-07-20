@@ -1,0 +1,12 @@
+{
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "routes": [
+    {
+      "src": "^/$",
+      "status": 308,
+      "headers": { "Location": "/virtual-car-showroom/" }
+    }
+  ]
+}
